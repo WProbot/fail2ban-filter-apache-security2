@@ -1,0 +1,9 @@
+[apache-modsecurity]
+enabled = false
+
+[apache-security2]
+port     = http,https
+logpath  = %(apache_error_log)s
+#action   = %(action_cfv4)s ; Change action if using CloudFlare
+maxretry = 4
+enabled = true
